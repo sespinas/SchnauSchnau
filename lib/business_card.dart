@@ -100,7 +100,7 @@ Widget businessCard() {
             Padding(
                 padding: EdgeInsets.only(top: 10.0, left: 22, right: 22),
                 child: Text(
-                  'Welcome to my Schnau Schnau app! You can either view my Schnauzer slideshow or get your dose of cat facts. Enjoy!',
+                  'Welcome to my Schnau Schnau app! Where you can view my Schnauzer slideshow and get your dose of cat facts. Enjoy!',
                   style: TextStyle(
                     fontFamily: 'Source Sans Pro',
                     fontSize: 20.0,
@@ -110,13 +110,13 @@ Widget businessCard() {
                   ),
                 )),
             Padding(
-                padding: EdgeInsets.only(top: 10.0, left: 10, right: 10),
+                padding: EdgeInsets.only(top: 10.0, left: 30, right: 30),
                 child: Text(
-                  'Version 1.1 updates:\n- Added Schnauzers\n- Added Schnauzers\n- Added Schnauzers\n- Added Schnauzers',
+                  'Version 1.2 updates:\n- Implemented Schnau images API\n- Implemented Cat-facts API\n- Optional "Advanced" tab added for slideshow interval duration.\n- "Refresh" of slideshow is mandatory after navigating away',
                   style: TextStyle(
                     fontFamily: 'Source Sans Pro',
                     fontSize: 15.0,
-                    letterSpacing: 2.5,
+                    letterSpacing: 1,
                     color: Colors.teal.shade100,
                     // fontWeight: FontWeight.bold,
                   ),

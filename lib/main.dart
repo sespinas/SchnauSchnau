@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'business_card.dart';
 
-import 'eight_ball.dart';
+import 'cat_facts.dart';
 import 'schnau_schnau.dart';
+import 'slider_settings.dart';
 
 void main() {
   runApp(MyApp());
@@ -34,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-        length: 3,
+        length: 4,
         child: Scaffold(
             backgroundColor: Colors.white,
             appBar: AppBar(
@@ -52,10 +53,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     Tab(icon: Icon(Icons.face, color: Colors.white)),
                     Tab(icon: Icon(Icons.pets, color: Colors.white)),
                     Tab(icon: Icon(Icons.fact_check, color: Colors.white)),
+                    Tab(icon: Icon(Icons.settings, color: Colors.white)),
                   ],
                 )),
             body: TabBarView(
-              children: [businessCard(), HomePage(), BallPage()],
+              children: [
+                businessCard(),
+                ParsePage(),
+                BallPage(),
+                SliderTutorial(),
+              ],
             )));
   }
 }
